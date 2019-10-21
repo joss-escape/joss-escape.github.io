@@ -1,7 +1,13 @@
+/* GENERAl */
 html, header, body, footer {
     margin: 0;
 }
 
+
+
+
+
+/* EN TETE */
 header {
     display: flex;
     align-items: center;
@@ -11,34 +17,58 @@ header {
     background-color: rgb(31, 31, 31);
 }
 
-header a{
-    text-decoration: none;
-    color: white;
-}
-
 nav li {
     font-family: 'Courier New', Courier, monospace;
     display: inline;
-    padding: 5px;
+    padding: 10px;
     border: 2px solid white;
     border-radius: 10px;
     margin: 0 20px;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    transition-property: color, background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms, 400ms;
+}
+
+nav li:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
 }
 
 #logo {
-    padding: 5px;
+    padding: 10px;
     border: 3px solid white;
     border-radius: 10px;
     margin: 0 30px;
     font-family: 'typewriter';
     color: white;
     font-size: 25px;
+    background-color: rgb(31, 31, 31);
+    transition-property: color, background-color;
+    transition-duration: 400ms;
 }
 
+#logo:hover {
+    color: black;
+    background-color: white;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/* TITRE */
 #title {
     height: 685px;
-    background-image: url(https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: contain;
     background-position: center;
     display: flex;
     align-items: center;
@@ -53,6 +83,14 @@ nav li {
     padding: 22px;
     border: 5px double white;
     margin-bottom: 10px;
+}
+
+p {
+    font-family: Georgia;
+    color: white;
+    margin: 25px 0;
+    justify-content: center;
+    font-size: 30px;
 }
 
 .container {
@@ -76,37 +114,5 @@ footer h3 {
     font-size: 15px;
     margin: 0 30px;
     font-family: Georgia, 'Times New Roman', Times
-}
-
-#title h5 {
-    font-family: 'typewriter';
-    color:  rgb(46, 19, 19);
-    font-size: 100px;
-    padding: 22px;
-    border: 5px double white;
-}
-
-p {
-    font-family: Georgia ;
-    color: black;
-    margin: 25px 0px 25px 0px;
-    justify-content: center;
-    font-size: 30px;
-}
-
-#title h6 {
-    font-family: 'typewriter';
-    color:  rgb(46, 19, 19);
-    font-size: 75px;
-    padding: 15px;
-    border: 5px double white;
-}
-
-p2 {
-    font-family: Georgia ;
-    color: rgb(22, 1, 1);
-    margin: 25px 0px 25px 0px;
-    justify-content: center;
-    font-size: 25px;
 }
 

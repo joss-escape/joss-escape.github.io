@@ -1,0 +1,118 @@
+/* GENERAl */
+html, header, body, footer {
+    margin: 0;
+}
+
+
+
+
+
+/* EN TETE */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(31, 31, 31);
+}
+
+nav li {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 0 20px;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    transition-property: color, background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms, 400ms;
+}
+
+nav li:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+#logo {
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 0 30px;
+    font-family: 'typewriter';
+    color: white;
+    font-size: 25px;
+    background-color: rgb(31, 31, 31);
+    transition-property: color, background-color;
+    transition-duration: 400ms;
+}
+
+#logo:hover {
+    color: black;
+    background-color: white;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/* TITRE */
+#title {
+    height: 685px;
+    background-image: url(https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 25px solid rgb(31, 31, 31);
+}
+
+#title h1 {
+    font-family: 'typewriter';
+    color: white;
+    font-size: 100px;
+    padding: 22px;
+    border: 5px double white;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: Georgia;
+    color: white;
+    margin: 25px 0;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+footer {
+    height: 60px;
+    background-color: rgb(31, 31, 31);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+footer h3 {
+    color: white;
+    font-size: 15px;
+    margin: 0 30px;
+    font-family: Georgia, 'Times New Roman', Times
+}
+
