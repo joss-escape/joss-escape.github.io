@@ -152,7 +152,7 @@ article {
     width: 500px;
     height: 700px;
     padding: 0;
-    border: 1px solid grey;
+    border: 3px solid grey;
 }
 
 article img {
@@ -160,5 +160,11 @@ article img {
 }
 
 article h3 {
-    
+    font-family: 'typewriter';
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    border-bottom: 3px solid grey;
+    border-top: 3px solid grey;
+    margin: 0 0 10px 0;
 }
