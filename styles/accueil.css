@@ -1,5 +1,6 @@
 html, header, body, footer {
     margin: 0;
+    min-width: 1300px;
 }
 
 header {
