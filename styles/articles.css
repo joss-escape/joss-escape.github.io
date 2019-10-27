@@ -2,6 +2,7 @@
 html, header, body, footer {
     margin: 0;
     width: 100%;
+    min-width: 1300px;
 }
 
 #content {
