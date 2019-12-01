@@ -1,3 +1,4 @@
+
 /* GENERAl */
 html, header, body, footer {
     margin: 0;
@@ -161,4 +162,240 @@ article img {
 
 article h3 {
     
+}
+
+/* GENERAl */
+html, header, body, footer {
+    margin: 0;
+    width: 100%;
+    min-width: 1300px;
+}
+
+#content {
+    position: relative;
+    top: 90px;
+}
+
+
+
+
+/* EN TETE */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    border-bottom: 5px solid rgb(31, 31, 31);
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(31, 31, 31);
+    position: fixed;
+    z-index: 5;
+}
+
+.ombre {
+    box-shadow: 0 15px 20px rgb(51, 51, 51);
+}
+
+nav li {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 0 20px;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    transition-property: color, background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms, 400ms;
+}
+
+nav li:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+#logo {
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 0 30px;
+    font-family: 'typewriter';
+    color: white;
+    font-size: 25px;
+    background-color: rgb(31, 31, 31);
+    transition-property: color, background-color;
+    transition-duration: 400ms;
+}
+
+#logo:hover {
+    color: black;
+    background-color: white;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/* TITRE */
+#title {
+    height: 685px;
+    background-image: url(../images/articles.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(43, 50, 71);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 25px solid rgb(31, 31, 31);
+    margin-bottom: 0;
+}
+
+#title h1 {
+    font-family: 'typewriter';
+    color: white;
+    font-size: 100px;
+    padding: 22px;
+    border: 5px double white;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    margin: 25px 0;
+    text-align: center;
+    font-size: 21px;
+}
+
+footer {
+    height: 60px;
+    background-color: rgb(31, 31, 31);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+footer h3 {
+    color: white;
+    font-size: 15px;
+    margin: 0 30px;
+    font-family: Georgia, 'Times New Roman', Times
+}
+
+
+
+
+
+/* CONTENU */
+.month {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    background-clip: margin-box;
+    border-bottom: 15px dashed rgb(31, 31, 31);
+    z-index: 6;
+}
+
+.month h2 {
+    font-family: 'typewriter';
+    color: black;
+    font-size: 60px;
+}
+
+
+
+.articles {
+    margin: 40px 30px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+article {
+    display: grid;
+    grid-template: 3fr 1fr 2fr 2fr / 1fr;
+    width: 500px;
+    height: 700px;
+    padding: 1px;
+    border: 2px solid lightgray;
+    background-color: rgb(250, 249, 249);
+    background-clip: content-box;
+    align-items: center;
+    box-shadow: 6px 6px 1px rgb(185, 185, 185);
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(.78,.48,.39,.85);
+    align-items: center;
+    justify-items: center;
+}
+
+article:hover {
+    transform: scale(1.03);
+}
+
+article img {
+    align-self: start;
+    margin-top: 30px;
+    height: 300px;
+    justify-self: center;
+    align-self: center;
+    box-shadow: 1px 1px lightgrey inset;
+}
+
+article h3 {
+    font-family: 'typewriter';
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    border-bottom: 3px dashed rgb(194, 194, 194);
+    border-top: 3px dashed rgb(194, 194, 194);
+    align-self: start;
+    padding: 10px;
+}
+
+article p {
+    margin-top: 30px;
+    align-self: center;
+}
+
+article button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgb(41, 79, 202);
+    padding: 8px;
+    border: 2px solid rgb(41, 79, 202);
+    border-radius: 7px;
+    box-shadow: 0;
+    /*transform: scale(1);*/
+    transition-duration: 300ms;
+}
+
+article button:hover {
+    position: relative;
+    top: -5px;
+    left: -5px;
+    box-shadow: 5px 5px 15px rgb(80, 80, 90);
+    /*transform: scale(1.1);*/
+    cursor: pointer;
 }
