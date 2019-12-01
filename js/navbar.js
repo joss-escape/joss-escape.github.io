@@ -5,8 +5,9 @@ window.onscroll = function() {
 var hOmbre = 775;
 
 var navbar = document.getElementById("navbar");
+console.log(navbar);
 
-function scrolling {
+function scrolling() {
     if (window.pageYOffset >= hOmbre) {
         navbar.classList.add("ombre");
     } else {
